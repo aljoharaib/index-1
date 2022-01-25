@@ -31,7 +31,7 @@ width: 100%;
         min-height: 100vh;
         display: flex;
         align-items: center;
-        background:#9375ff no-repeat;
+        background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(169%2c 146%2c 217%2c 1)'%3e%3c/rect%3e%3cpath d='M294.33 644.06C475.94 640.46 619.37 405.63 978.79 400.28 1338.21 394.93 1485.27 206.2 1663.25 204.28' stroke='rgba(7%2c 19%2c 126%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M393.71 573.3C571.04 568.2 701.9 312.08 1050.68 305.09 1399.47 298.1 1535.87 105.74 1707.66 103.49' stroke='rgba(7%2c 19%2c 126%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M444.25 589.11C606.86 586.61 738.1 392.97 1062.94 388.15 1387.79 383.33 1519.41 194.47 1681.64 192.15' stroke='rgba(7%2c 19%2c 126%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M337.6 664.84C469.41 654.9 559.41 395.84 792.1 394.66 1024.8 393.48 1019.36 464.66 1246.61 464.66 1473.86 464.66 1586.14 394.86 1701.11 394.66' stroke='rgba(7%2c 19%2c 126%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M866.92 650.72C965.05 607.49 891.61 320.38 1111.3 298.23 1330.99 276.08 1472.96 159.6 1600.06 158.23' stroke='rgba(7%2c 19%2c 126%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e")no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -40,13 +40,15 @@ width: 100%;
         color: white;
         font-size: 1.4em;
         font-weight: 500;
+        margin:10px auto 20px;
     }
     .main-1 h2 span{
       display: inline-block;
-      margin-top: 10px;
+     
       color: white;
       font-size: 3em;
-      font-weight: 600;  
+      font-weight: 600; 
+      margin:10px auto 20px; 
     }
     .main-1 h3{
         color: white;
@@ -55,20 +57,76 @@ width: 100%;
         letter-spacing: 1px;
         margin-top: 10px;
         margin-bottom: 30px;
-    }
-    #min-btn{
-        color:#00a69c ;
-        background-color:#fee552 ;
-        text-decoration: none;
-        font-size: 1.1em;
-        font-weight: 600;
-        display: inline-block;
-        padding: 0.9375em 2.1875em;
-        letter-spacing: 1px;
-
+        margin:10px auto 20px;
     }
    #min-7{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    justify-content: center;
+    align-items: right;
+    width: 800px;
+    margin:40px auto 90px;
+
     }
+    h5{
+        color:#00a69c ;  
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    /* From cssbuttons.io by @alexmaracinaru */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #5f45bb;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #5d42a7;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
