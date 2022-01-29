@@ -2,7 +2,10 @@ body{
     font-family: quicksand;
     margin: 0px;
 }
-
+@media only screen and (max-width:600px){  
+#aboutus{     flex-direction: column-reverse;   }  
+ footer{     flex-direction: column;   }
+}
 nav{
     display: flex;
 justify-content: space-between;
@@ -218,4 +221,119 @@ width: 500px;
     font-size:15px;
  
 }
+.form-continr{
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+background:#0c1753 no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.text-form1{
+    color: white;
+    font-size: 3em;
+}
+.text-form{
+    color: white;
+    font-size: 1.4em;
+    align-items: flex-start;
+}
+  
+   input,text,textarea{
+    width: 67%;
+    height: 70px;
+    margin: 10px;
+    border: 2px solid rgba(159, 160, 184, 0.4);
+    box-sizing: border-box;
+    border-radius: 5px;
+   }
 
+   .text-2{
+       display: flex;
+       justify-content: space-between;
+       width: max-content;
+       width: 70%;
+   }
+   .footer-continr{
+    display: flex;
+    background: rgb(236, 232, 243);
+    width: 100%;
+    min-height: 50vh;
+    justify-content: space-around;
+    align-items:center;
+   }
+   .link-web h4{
+color: #317e96;
+font-size: 1.4em;
+   }
+   .social-ico a{
+    color: rgb(9, 80, 146);
+    font-size: 1.7em;
+}
+   .footer-copy{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      background:rgb(218, 208, 238); 
+   }
+.cta-b {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    width: 67%;
+    height: 55px;
+   
+   }
+   .cta-b:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #317e96;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta-b span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #b1dae7;
+   }
+   
+   .cta-b svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #b1dae7;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta-b:hover:before {
+    width: 100%;
+    background: #317e96;
+   }
+   
+   .cta-b:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta-b:active {
+    transform: scale(0.95);
+   }
